@@ -55,7 +55,7 @@ footer {
 
 #add-situation-btn {
   background-color: #333;
-  color: #fff;
+  color: rgb(15, 15, 15);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -65,18 +65,15 @@ footer {
 
 #container {
   margin-top: 50px;
-  font-size: 24px;
+  font-size: 17px;
   font-weight: bold;
   width: 80%;
   height: 400px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .text {
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 }
 
 .borda-animada {
@@ -91,13 +88,14 @@ footer {
     -webkit-linear-gradient(left, #00cfd5 50%, transparent 50%),
     -webkit-linear-gradient(top, #00cfd5 50%, transparent 50%),
     -webkit-linear-gradient(top, #00cfd5 50%, transparent 50%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .borda-animada a {
   display: table-cell;
   vertical-align: middle;
   text-decoration: none;
-  color: #00cfd5;
+  color: #000000;
 }
 
 .borda-animada {
