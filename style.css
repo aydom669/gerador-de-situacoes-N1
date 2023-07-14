@@ -126,3 +126,15 @@ footer {
     background-position: 1000px 0, -1000px bottom, 0 -1000px, right 1000px;
   }
 }
+
+@media (max-width: 600px) {
+  header,
+  main,
+  footer {
+    padding: 10px;
+  }
+
+  a {
+    width: 150px;
+  }
+}
