@@ -127,14 +127,73 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+/* Responsividade para vários tamanhos de aparelho */
+
+@media (max-width: 800px) {
   header,
   main,
   footer {
     padding: 10px;
   }
 
-  a {
-    width: 150px;
+  h1 {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  #container {
+    width: 90%;
+    height: 300px;
+  }
+
+  .borda-animada {
+    height: 30px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  #container {
+    width: 95%;
+    height: 200px;
+  }
+
+  .borda-animada {
+    height: 20px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  #container {
+    height: 150px;
+  }
+
+  .borda-animada {
+    height: 15px;
+    width: 70px;
   }
 }
