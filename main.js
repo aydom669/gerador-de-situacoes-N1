@@ -1,66 +1,84 @@
-var situacoes = [
-  "Cliente solicita um desconto para continuar com o serviço",
-  "Cliente está insatisfeito com a qualidade do atendimento e considera cancelar",
-  "Cliente deseja negociar o valor da fatura para evitar o cancelamento",
-  "Cliente recebeu uma oferta da concorrência e está considerando migrar",
-  "Cliente precisa de mais benefícios para continuar com o serviço",
-  "Cliente está descontente com a política de renovação de contrato",
-  "Cliente enfrenta problemas frequentes e está pensando em cancelar",
-  "Cliente solicita uma revisão do contrato para evitar a migração",
-  "Cliente recebeu um aumento no preço do plano e está avaliando outras opções",
-  "Cliente está considerando migrar para um plano com mais vantagens",
-  "Cliente quer saber sobre possíveis benefícios para permanecer como cliente",
-  "Cliente solicita um upgrade de serviço para continuar com a empresa",
-  "Cliente precisa de um plano mais personalizado para continuar",
-  "Cliente está insatisfeito com o suporte técnico e cogita cancelar",
-  "Cliente está avaliando outras opções no mercado antes de renovar",
-  "Cliente quer saber sobre programas de fidelidade e recompensas",
-  "Cliente precisa de uma solução rápida para um problema crítico",
-  "Cliente deseja receber um atendimento prioritário para continuar",
-  "Cliente está considerando mudar de operadora por falta de vantagens",
-  "Cliente quer renegociar o prazo de fidelidade para evitar o cancelamento",
-  "Cliente está insatisfeito com a qualidade do serviço prestado",
-  "Cliente precisa de um plano mais flexível para suas necessidades",
-  "Cliente quer saber sobre descontos especiais para clientes antigos",
-  "Cliente recebeu uma oferta de pacote promocional da concorrência",
-  "Cliente enfrenta dificuldades com o serviço e considera cancelar",
-  "Cliente precisa de uma solução rápida para um problema de cobertura",
-  "Cliente está descontente com a política de suporte da empresa",
-  "Cliente solicita uma melhoria nos serviços oferecidos para continuar",
-  "Cliente está considerando mudar para uma operadora com melhor reputação",
-  "Cliente deseja adicionar serviços extras ao seu pacote atual",
-  "Cliente enfrenta problemas recorrentes de cobrança e considera cancelar",
-  "Cliente quer saber sobre opções de renovação antecipada com desconto",
-  "Cliente está avaliando a relação custo-benefício do serviço atual",
-  "Cliente precisa de um atendimento especializado para resolver seu problema",
-  "Cliente está insatisfeito com as condições de fidelidade do contrato",
-  "Cliente quer saber sobre opções de upgrade sem custo adicional",
-  "Cliente recebeu um aumento na mensalidade e está considerando cancelar",
-  "Cliente enfrenta dificuldades técnicas constantes e cogita mudar de empresa",
-  "Cliente solicita um plano mais econômico para continuar",
-  "Cliente está insatisfeito com a qualidade do sinal e considera migrar",
-  "Cliente precisa de um pacote personalizado com serviços específicos",
-  "Cliente quer saber sobre vantagens exclusivas para clientes retidos",
-  "Cliente enfrenta problemas de estabilidade no serviço e avalia outras opções",
-  "Cliente está considerando migrar para uma empresa com melhor atendimento",
-  "Cliente deseja receber um benefício especial para permanecer com a empresa",
-  "Cliente está descontente com as condições contratuais e pensa em cancelar",
-  "Cliente solicita uma revisão dos termos do contrato para continuar",
-  "Cliente está avaliando ofertas de outras operadoras antes de renovar",
-  "Cliente quer saber sobre descontos progressivos para clientes fiéis",
+// Lista
+
+const situacoes = [
+  "Cliente relata problemas de conexão com a internet",
+  "Cliente está com dificuldades para configurar o roteador",
+  "Cliente deseja solicitar a transferência de número para a Claro",
+  "Cliente precisa de suporte técnico para resolver problemas de sinal",
+  "Cliente quer obter informações sobre os planos e pacotes disponíveis",
+  "Cliente recebeu uma fatura com valores incorretos",
+  "Cliente está enfrentando dificuldades para ativar um novo chip",
+  "Cliente deseja solicitar uma segunda via da fatura",
+  "Cliente precisa de ajuda para configurar o serviço de voicemail",
+  "Cliente está com problemas no serviço de TV e deseja assistência",
+  "Cliente quer cancelar um serviço específico",
+  "Cliente está com dificuldades para efetuar chamadas",
+  "Cliente recebeu uma cobrança indevida e precisa de reembolso",
+  "Cliente precisa de suporte para instalar uma linha telefônica",
+  "Cliente quer solicitar um upgrade de velocidade na internet",
+  "Cliente está com problemas para acessar o serviço de streaming da Claro",
+  "Cliente deseja adquirir um novo smartphone através da Claro",
+  "Cliente precisa de ajuda para configurar o serviço de e-mail",
+  "Cliente está insatisfeito com o atendimento recebido anteriormente",
+  "Cliente quer adicionar um pacote de canais extras à sua assinatura de TV",
+  "Cliente recebeu uma oferta promocional da concorrência e está considerando migrar",
+  "Cliente deseja transferir a titularidade da conta para outra pessoa",
+  "Cliente está enfrentando problemas de cobertura em determinada região",
+  "Cliente precisa de suporte para configurar o serviço de chamada em espera",
+  "Cliente quer solicitar uma mudança de endereço para a instalação dos serviços",
+  "Cliente está com dificuldades para enviar mensagens de texto",
+  "Cliente recebeu uma mensagem de phishing e precisa de orientação",
+  "Cliente precisa ativar a função de roaming internacional",
+  "Cliente está com problemas de lentidão no serviço de internet fixa",
+  "Cliente deseja cancelar o serviço de telefonia fixa",
+  "Cliente está com dificuldades para configurar o serviço de identificador de chamadas",
+  "Cliente quer adicionar um novo dispositivo à rede Wi-Fi",
+  "Cliente recebeu um equipamento com defeito e precisa de substituição",
+  "Cliente precisa redefinir a senha do serviço de internet",
+  "Cliente está com problemas de recepção do sinal de TV",
+  "Cliente deseja bloquear chamadas indesejadas",
+  "Cliente precisa solicitar um reparo no serviço de internet",
+  "Cliente está com dificuldades para configurar o serviço de mensagens de voz",
+  "Cliente quer adquirir um plano de telefonia móvel para sua empresa",
+  "Cliente recebeu uma cobrança de roaming internacional indevida",
+  "Cliente está enfrentando problemas de qualidade nas chamadas",
+  "Cliente precisa de suporte para configurar o serviço de chamada em conferência",
+  "Cliente quer alterar o plano de dados da internet",
+  "Cliente está com dificuldades para acessar a conta online",
+  "Cliente recebeu uma oferta de migração para a Claro e está avaliando",
+  "Cliente deseja solicitar um pacote promocional da Claro",
+  "Cliente precisa de suporte técnico para solucionar problemas de conexão",
+  "Cliente está enfrentando dificuldades para realizar recargas em seu celular",
+  "Cliente quer adicionar um serviço de telefonia fixa à sua assinatura",
+  "Cliente está insatisfeito com o atendimento prestado pelo suporte técnico",
+  "Cliente precisa de ajuda para configurar o serviço de chamada em espera",
+  "Cliente está com dificuldades para ativar o serviço de roaming internacional",
+  "Cliente deseja alterar as informações cadastrais em sua conta",
+  "Cliente está enfrentando problemas para utilizar o serviço de mensagens de texto",
+  "Cliente quer saber sobre as opções de planos pós-pagos da Claro",
+  "Cliente precisa de suporte técnico para configurar o serviço de voicemail",
+  "Cliente está com dificuldades para acessar determinados sites com a conexão da Claro",
+  "Cliente recebeu uma mensagem de texto suspeita e deseja reportar",
+  "Cliente deseja cancelar um serviço adicional que não utiliza mais",
+  "Cliente precisa de suporte para configurar o serviço de identificador de chamadas",
+  "Cliente está insatisfeito com os termos do contrato e deseja esclarecimentos",
 ];
 
-var situacoesContainer = document.getElementById("text");
-var usedWords = [];
+// =====================================================
+
+const situacoesContainer = document.getElementById("text");
+const situacaoUsadas = [];
 
 function generateRandomWord() {
-  if (usedWords.length === situacoes.length) {
-    usedWords = [];
+  if (situacaoUsadas.length === situacoes.length) {
+    situacaoUsadas = [];
   }
 
-  var availableWords = situacoes.filter((word) => !usedWords.includes(word));
-  var randomIndex = Math.floor(Math.random() * availableWords.length);
-  var randomWord = availableWords[randomIndex];
-  usedWords.push(randomWord);
-  situacoesContainer.textContent = randomWord;
+  const availableWords = situacoes.filter(
+    (listaSituacoes) => !situacaoUsadas.includes(listaSituacoes)
+  );
+  const randomIndex = Math.floor(Math.random() * availableWords.length);
+  const randomSituacao = availableSituacaos[randomIndex];
+  usedSituacaos.push(randomSituacao);
+  situacoesContainer.textContent = randomSituacao;
 }
