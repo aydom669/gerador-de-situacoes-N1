@@ -1,9 +1,12 @@
 /* Reset de estilos básicos */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
 body,
 h1,
 p {
   margin: 0;
   padding: 0;
+  font-family: "Space Mono", monospace;
 }
 
 body {
@@ -20,6 +23,10 @@ header {
 
 h1 {
   font-size: 24px;
+}
+
+.main__p {
+  padding: 1rem 0;
 }
 
 main {
@@ -96,6 +103,7 @@ footer {
   vertical-align: middle;
   text-decoration: none;
   color: #000000;
+  padding: 1rem 4rem;
 }
 
 .borda-animada {
